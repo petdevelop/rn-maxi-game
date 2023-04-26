@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from "react-native"
 import Colors from "../../constants/Colors"
 
-const InstructionText = ({text}) => {
+const InstructionText = ({text, style}) => {
     return <View>
-        <Text style={styles.main}>{ text }</Text>
+        <Text style={[styles.main, style]}>{ text }</Text>
     </View>
 }
 
 const styles = StyleSheet.create({
-    main: {
+    main: {     
         color: Colors.yellow,
         fontSize: 24
     }
